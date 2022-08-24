@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      form {
+        display: block;
+        margin: auto;
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <div class="botright">
+        <div>
+          <img
+            src="beauty-cosmetics-logo-label-for-studio-vector-18225332.jpg"
+            alt="Logo"
+          />
+        </div>
+        <div>
+          <img
+            src="linear-beauty-cosmetics-logo-design-vector-29628279.jpg"
+            alt="Logo"
+          />
+        </div>
+      </div>
+
+      <!-- navlink left -->
+      <div class="navleft">
+        <ul>
+          <li><a href="about.html">About us </a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="revision.html">Shoping cart</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="signup.html">Sign up </a></li>
+          <li><a href="index.html">HOME </a></li>
+        </ul>
+        <!--  search -->
+        <div>
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom" style="justify-content: center">
+        <main>
+          <h2 style="display: block; margin: auto">
+            Fill up the form to complete registration
+          </h2>
+        </main>
+      </div>
+    </nav>
+    <form action="login.html" method="post" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>Registration form</legend>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          value="Email"
+        />
+        <br /><br />
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          placeholder="Enter your Password"
+          value="password"
+        />
+        <br /><br />
+        <label for="confirm">Confirmation of Password</label>
+        <input
+          type="password"
+          name="confirm"
+          id="confirm"
+          placeholder="confirm your Password"
+          value="password"
+        />
+        <br /><br />
+        <label for="gender">Gender :</label>
+        <label for="genderm">Male</label>
+        <input type="radio" name="gender" id="genderm" value="Male" />
+
+        <label for="genderf">Female</label>
+        <input type="radio" name="gender" id="genderf" value="Female" />
+        <br /><br />
+        <label for="age">Age</label>
+        <input type="date" name="age" id="age" />
+        <br /><br />
+        <input type="checkbox" name="calidation" id="accept" />
+        <label for="accept">I read and accept validation rules</label>
+        <br /><br />
+
+        <input
+          type="submit"
+          value="Sign up"
+          name="signup"
+          style="display: block; margin: auto"
+        />
+        <br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

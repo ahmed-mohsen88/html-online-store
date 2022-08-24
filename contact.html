@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      form {
+        background-color: #333;
+        color: black;
+        display: block;
+        justify-self: center;
+        margin: auto;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <div class="botright">
+        <div>
+          <img
+            src="beauty-cosmetics-logo-label-for-studio-vector-18225332.jpg"
+            alt="Logo"
+          />
+        </div>
+        <div>
+          <img
+            src="linear-beauty-cosmetics-logo-design-vector-29628279.jpg"
+            alt="Logo"
+          />
+        </div>
+      </div>
+
+      <!-- navlink left -->
+      <div class="navleft">
+        <ul>
+          <li><a href="about.html">About us </a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="revision.html">Shoping cart</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="signup.html">Sign up </a></li>
+          <li><a href="index.html">HOME </a></li>
+        </ul>
+        <!--  search -->
+        <div>
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom" style="justify-content: center">
+        <main>
+          <h2
+            style="
+              text-align: center;
+              display: block;
+              justify-content: center;
+              justify-self: center;
+              margin: auto;
+              margin-top: 10px;
+            "
+          >
+            Please fill the form
+          </h2>
+        </main>
+      </div>
+    </nav>
+    <form action="#" method="post" autocomplete="on" novalidate>
+      <fieldset>
+        <legend>contact form</legend>
+        <label for="email">Email</label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          value="Email"
+        />
+        <br /><br />
+        <label for="phone">phone nummer</label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          value="phone"
+          placeholder="enter your phone number"
+        />
+        <br /><br />
+        <label for="country">select your country</label>
+        <select name="country" id="country">
+          <option value="">egypt</option>
+          <option value="">france</option>
+          <option value="">england</option>
+        </select>
+        <br /><br />
+        <label for="age">Age</label>
+        <input type="date" name="age" id="age" />
+        <br /><br />
+        <input type="checkbox" name="calidation" id="accept" />
+        <label for="accept">I read and accept validation rules</label>
+        <br /><br />
+        <label for="data">Type some text</label>
+        <textarea name="data" id="data" cols="30" rows="10"></textarea>
+        <br /><br />
+        <input type="submit" value="submit" name="submit" />
+        <br /><br />
+      </fieldset>
+    </form>
+  </body>
+</html>

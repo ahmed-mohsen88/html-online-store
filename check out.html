@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>check out</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: teal;
+      }
+      form {
+        display: block;
+        justify-self: center;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <div class="botright">
+        <div>
+          <img
+            src="beauty-cosmetics-logo-label-for-studio-vector-18225332.jpg"
+            alt="Logo"
+          />
+        </div>
+        <div>
+          <img
+            src="linear-beauty-cosmetics-logo-design-vector-29628279.jpg"
+            alt="Logo"
+          />
+        </div>
+      </div>
+
+      <!-- navlink left -->
+      <div class="navleft">
+        <ul>
+          <li><a href="about.html">About us </a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="revision.html">Shoping cart</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="signup.html">Sign up </a></li>
+          <li><a href="index.html">HOME </a></li>
+        </ul>
+        <!--  search -->
+        <div>
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom" style="justify-content: center">
+        <main>
+          <h2>Check out</h2>
+        </main>
+      </div>
+    </nav>
+    <section>
+      <form action="last.html">
+        <fieldset>
+          <legend>Check out form</legend>
+          <label for="fullname"> Full name </label>
+          <input
+            type="text"
+            id="fullname"
+            value="fullname"
+            placeholder="please enter your full name"
+          />
+          <br /><br />
+          <label for="email">Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            value="Email"
+          />
+          <br /><br />
+          <label for="adress">Adress</label>
+          <input
+            type="text"
+            name="adress"
+            id="adress"
+            placeholder="Enter your adress"
+            value="adress"
+          />
+          <br /><br />
+          <label for=""> Payment :</label>
+          <label for="cash">Cash on delivery</label>
+          <input type="radio" value="payment" name="payment" id="cash" />
+          <label for="visa">Visa</label>
+          <input type="radio" value="payment" name="payment" id="visa" />
+          <br /><br />
+          <label for="cardname">Name on card</label>
+          <input
+            type="text"
+            value="cardname"
+            id="cardname"
+            placeholder="enter name on card"
+          />
+          <br /><br />
+          <label for="cardnum">Card Number</label>
+          <input
+            type="number"
+            name="cardnum"
+            id="cardnum"
+            value="card number"
+            placeholder="please enter your card number"
+          />
+          <br /><br />
+          <label for="cardexp">EXP Month</label>
+          <input type="date" name="exp" id="exp" />
+          <br /><br />
+          <label for="cardexpyear">EXP Month</label>
+          <input type="date" name="cardexpyear" id="cardexpyear" />
+          <br /><br />
+          <label for="cvv">CVV</label>
+          <input
+            type="number"
+            id="cvv"
+            name="cvv"
+            placeholder="enter 3 number on back of your card"
+          />
+          <br /><br />
+          <input type="submit" value="submit" />
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

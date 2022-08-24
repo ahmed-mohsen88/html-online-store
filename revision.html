@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>revision purchase</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        background-color: teal;
+      }
+      section {
+        display: grid;
+        grid-template-rows: 10vh 15vh 15vh 10vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+          "nm nm description description pric quantity subtotal sd sd sd "
+          "im im desc desc price qt tot sd sd sd"
+          "im2 im2 desc2 desc2 price2 qt2 tot2 sd sd sd "
+          "ft ft ft ft ft ft ft sd sd sd";
+        border: 1px solid black;
+      }
+      div {
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div img {
+        width: 30%;
+      }
+      button {
+        width: 200px;
+        height: 50px;
+      }
+      p {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <!-- logo -->
+      <div class="botright">
+        <div>
+          <img
+            src="beauty-cosmetics-logo-label-for-studio-vector-18225332.jpg"
+            alt="Logo"
+          />
+        </div>
+        <div>
+          <img
+            src="linear-beauty-cosmetics-logo-design-vector-29628279.jpg"
+            alt="Logo"
+          />
+        </div>
+      </div>
+
+      <!-- navlink  -->
+      <div class="navleft">
+        <ul>
+          <li><a href="about.html">About us </a></li>
+          <li><a href="contact.html">Contact </a></li>
+          <li><a href="revision.html">Shoping cart</a></li>
+          <li><a href="login.html">Sign in</a></li>
+          <li><a href="signup.html">Sign up </a></li>
+          <li><a href="index.html">HOME </a></li>
+        </ul>
+        <!--  search -->
+        <div>
+          <form action="#">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- bottom -->
+      <div class="bottom" style="justify-content: center">
+        <main>
+          <h2 style="display: block; margin: auto">Revise your order</h2>
+        </main>
+      </div>
+    </nav>
+    <main><h1>Shoping cart</h1></main>
+    <section>
+      <div style="grid-area: nm"><p>Product</p></div>
+      <div style="grid-area: description"><p>Description</p></div>
+      <div style="grid-area: pric"><p>Price</p></div>
+      <div style="grid-area: quantity"><p>Quantity</p></div>
+      <div style="grid-area: subtotal"><p>Subtotal</p></div>
+      <div style="grid-area: im">
+        <img src="p5.jpg" alt="img" />
+      </div>
+      <div style="grid-area: desc">
+        <p>
+          Bioderma Pigmentbio Sensitive Areas Brightening Fro Dark Spots Cream -
+          75 Ml
+        </p>
+      </div>
+      <div style="grid-area: price"><p>210</p></div>
+      <div style="grid-area: qt"><p>1</p></div>
+      <div style="grid-area: tot"><p>210</p></div>
+      <div
+        style="grid-area: sd; height: 100%; width: 100%; flex-direction: column"
+      >
+        <form action="#">
+          <fieldset>
+            <legend>Product summary</legend>
+            <p>Product Summary</p>
+            <p>Original Total 650.00</p>
+            <p>Total Discount 0.00</p>
+            <details>
+              <summary>Gift card</summary>
+              <input type="text" placeholder="Please enter code" />
+              <input type="submit" />
+            </details>
+            <details>
+              <summary>Discount code</summary>
+              <input type="text" placeholder="Please enter code" />
+              <input type="submit" />
+            </details>
+            <p>VAT 0.00 LE</p>
+            <p>Subtotal 650.00</p>
+          </fieldset>
+        </form>
+        <a href="check out.html"><button>Go to check out</button></a>
+      </div>
+      <div style="grid-area: im2"><img src="p3.JPG" alt="img" /></div>
+      <div style="grid-area: desc2">
+        <p>
+          Bioderma Pigmentbio Sensitive Areas Brightening Fro Dark Spots Cream -
+          75 Ml
+        </p>
+      </div>
+      <div style="grid-area: price2"><p>110</p></div>
+      <div style="grid-area: qt2"><p>2</p></div>
+      <div style="grid-area: tot2"><p>220</p></div>
+      <div
+        style="
+          grid-area: ft;
+          flex-direction: row;
+          justify-content: space-evenly;
+        "
+      >
+        <a href="index.html"><button>Continue shoping</button></a>
+      </div>
+    </section>
+  </body>
+</html>

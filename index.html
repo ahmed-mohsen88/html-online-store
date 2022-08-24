@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cosmocutical</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        nav {
+            display: grid;
+            border: 1px solid black;
+            grid-template-rows: 10vh 20vh 10vh;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "top top ""botright botright""bottom bottom";
+            width: 100%;
+            justify-content: center;
+        }
+
+        .navleft {
+            display: flex;
+            grid-area: top;
+            border: 1px solid black;
+            justify-content: space-evenly;
+            background-color: #333;
+        }
+
+        .bottom {
+            display: flex;
+            grid-area: bottom;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+
+        .botright {
+            display: flex;
+            grid-area: botright;
+            justify-content: stretch;
+            background-color: #333;
+            flex-direction: row;
+        }
+
+        .botright img {
+            width: 750px;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        input[type="text"] {
+            justify-content: right;
+            border: none;
+            font-size: 17px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        video {
+            width: 80%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        form {
+            width: fit-content;
+            display: flex;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+
+        section {
+            display: grid;
+            grid-template-rows: 70vh 70vh;
+            grid-template-columns: 1fr 600px 1fr;
+            grid-template-areas: "sectionleft seclast sectionright ""secbleft seclast secbright ";
+            background-color: #333;
+        }
+
+        #seclimg {
+            display: flex;
+            margin-left: 20px;
+            grid-area: sectionleft;
+            padding: 20px;
+
+        }
+
+        #secrimg {
+            display: flex;
+            margin-right: 20px;
+            grid-area: sectionright;
+            padding: 20px;
+        }
+
+        #secblimg {
+            display: flex;
+            margin-left: 50px;
+            padding: 20px;
+            grid-area: secbleft;
+        }
+
+        #secbrimg {
+            display: flex;
+            margin-right: 50px;
+            padding: 20px;
+            grid-area: secbright;
+        }
+
+        section img {
+            width: 100%;
+        }
+
+        th {
+            color: aliceblue;
+        }
+
+        table img {
+            display: block;
+            margin: auto;
+        }
+
+        td button {
+            width: 100%;
+        }
+
+        a button:hover {
+            background-color: #111;
+        }
+
+        button {
+            color: blue;
+            height: 100%;
+
+        }
+
+        form {
+            font-weight: 900;
+            box-sizing: border-box;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: hsl(0, 0%, 100%);
+            border: 4px solid hsl(0, 0%, 90%);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        #seclast {
+            grid-area: seclast;
+            display: flex;
+
+        }
+
+        table {
+            border: 1px solid #111;
+            background-color: #333;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <!--1 div > 2 div logo img-->
+        <div class="botright">
+            <div>
+                <img src="beauty-cosmetics-logo-label-for-studio-vector-18225332.jpg" alt="Logo" />
+            </div>
+            <div>
+                <img src="linear-beauty-cosmetics-logo-design-vector-29628279.jpg" alt="Logo" />
+            </div>
+        </div>
+
+        <!-- navlink & search 1 div > 2 div -->
+        <div class="navleft">
+            <ul>
+                <li><a href="revision.html">Shoping cart</a></li>
+                <li><a href="contact.html">Contact </a></li>
+                <li><a href="about.html">About us </a></li>
+                <li><a href="signup.html">Sign up</a></li>
+                <li><a href="login.html">Sign in</a></li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+            <!--  search -->
+            <div>
+                <form action="#">
+                    <input type="text" placeholder="Search.." name="search" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- nav bottom paragraph change in each page contain main -->
+        <main class="bottom" style="justify-content: center">
+            <div>
+                <h2>Welcome to best medicated cosmetics <abbr title="This website designed by ahmed mohsen">web
+                        site</abbr></h2>
+            </div>
+        </main>
+    </nav>
+    <!-- end of nav bar -->
+
+
+    <!-- img video  table  section with grid-->
+    <section>
+        <!-- 2 video div -->
+        <div>
+            <video id="secrimg" style="display:block;justify-self:center;margin:auto;margin-top: 5px;" width="50%"
+                height="300px " controls poster="pexels-shiny-diamond-3762875.jpg ">
+                <source src="production ID_3741677.mp4">
+            </video>
+        </div>
+
+        <div>
+            <video id="seclimg" style="display:block;justify-self:center;margin:auto;margin-top: 5px;" width="50%"
+                height="300px " controls poster="pexels-shiny-diamond-3762875.jpg ">
+                <source src="production ID_3741677.mp4">
+            </video>
+        </div>
+        <!-- 2 img div -->
+        <div id="secbrimg"><img src="3.JPG" alt="img" /></div>
+        <div id="secblimg"><img src="2.jpg" alt="img" /></div>
+        <!-- table design showing web products -->
+
+        <div id="seclast">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th><ins><strong>Our Products</strong></ins></th>
+                        <th><ins><strong>Our Products</strong></ins></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="text-align:center">
+                            <img src="p5.jpg" alt="img" />
+                            <p style="color: aliceblue">
+                                Bioderma pigmento senstive area
+                            </p>
+                            <a href="p5.html"><button>Show details</button></a>
+                        </td style="text-align:center">
+                        <td style="text-align:center">
+                            <img src="p2.jpg" alt="img" />
+                            <p style="color: aliceblue">
+                                Bioderma photoderm 50+ cream
+                            </p>
+
+                            <a href="p2.html"><button>Show details</button></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align:center">
+                            <img src="p3.jpg" alt="img" />
+                            <p style="color: aliceblue">
+                                Bioderma sebium cream
+                            </p>
+                            <a href="p3.html"><button>Show details</button></a>
+                        </td>
+                        <td style="text-align:center">
+                            <img src="p4.jpg" alt="img" />
+                            <p style="color: aliceblue">
+                                Bioderma sensebo water 200ml</p>
+                            <a href="p4.html"><button>Show details</button></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>

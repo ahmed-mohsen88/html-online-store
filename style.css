@@ -1,0 +1,137 @@
+nav {
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: 10vh 20vh 10vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "top top " "botright botright" "bottom bottom";
+  width: 100%;
+  justify-content: center;
+}
+.navleft {
+  display: flex;
+  grid-area: top;
+  border: 1px solid black;
+  justify-content: space-evenly;
+  background-color: #333;
+}
+
+.bottom {
+  display: flex;
+  grid-area: bottom;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.botright {
+  display: flex;
+  grid-area: botright;
+  justify-content: stretch;
+  background-color: #333;
+  flex-direction: row;
+}
+.botright img {
+  width: 750px;
+  height: 150px;
+  overflow: hidden;
+}
+input[type="text"] {
+  justify-content: right;
+  border: none;
+  font-size: 17px;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+form {
+  width: fit-content;
+  display: flex;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+table {
+  border: 1px solid #111;
+  margin-top: 2px;
+  width: 100%;
+}
+
+th {
+  color: #111;
+}
+table img {
+  display: block;
+  margin: auto;
+}
+
+td button {
+  width: 100%;
+}
+a button:hover {
+  background-color: #111;
+}
+button {
+  color: blue;
+}
+/* now */
+.product {
+  display: grid;
+  grid-template-rows: 5 0vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "productleft productright";
+  border: 1px solid black;
+}
+#pimg {
+  display: flex;
+  grid-area: productleft;
+  margin-left: 100px;
+  align-items: stretch;
+  justify-content: stretch;
+}
+#pparag {
+  display: flex;
+  grid-area: productright;
+  margin-right: 100px;
+  flex-direction: column;
+}
+body {
+  background-color: teal;
+}
+h2 {
+  margin-left: 150px;
+}
+td {
+  font-weight: 900;
+}
+/* copy past form design */
+form {
+  font-weight: 900;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border: 4px solid hsl(0, 4%, 15%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
